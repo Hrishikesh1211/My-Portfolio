@@ -272,7 +272,7 @@ export default function HrishikeshPortfolio() {
           </p>
 
           <h1 className="max-w-5xl text-5xl font-semibold tracking-tight md:text-7xl">
-            Hrishikesh Rajaputra builds
+            Hrishikesh Rajaputra
             <span className="relative mt-2 flex h-[80px] w-full justify-center overflow-hidden">
               {titles.map((title, index) => (
                 <motion.span
