@@ -106,13 +106,19 @@ export default function HrishikeshPortfolio() {
 
   const featuredProject = {
     title: "NASA EONET Interactive Dashboard",
+    category: "Geospatial Data Product",
     description:
-      "This is my favorite project because it combines the things I enjoy most: live data, maps, clean interfaces, and turning a messy real-world feed into something people can actually explore.",
+      "A production-style React dashboard that turns NASA EONET's natural event feed into an interactive map experience for monitoring wildfires, storms, volcanic activity, and other active events.",
     approach:
-      "I built it around NASA EONET so natural events like wildfires, storms, and volcano activity feel immediate instead of buried in raw JSON. The goal was to make the data understandable at a glance, then let users dig deeper through filtering and event details.",
-    impact:
-      "It is the project I would most want to walk through in an interview because it shows how I think across API integration, geospatial UI, data modeling, and product decisions.",
-    highlights: ["Live NASA event feed", "Map-first exploration", "Insight-driven filtering"],
+      "The build focuses on API integration, event normalization, geospatial visualization, and filtering workflows so users can move from a global overview to specific event details quickly.",
+    featuredReason:
+      "I featured this project because it reflects the kind of work I enjoy most: taking complex real-world data and shaping it into a clear, useful experience people can explore.",
+    highlights: ["Real-time NASA data", "Map-centered discovery", "Category-based filtering"],
+    metrics: [
+      { label: "Source", value: "NASA EONET" },
+      { label: "Interface", value: "Interactive map" },
+      { label: "Focus", value: "Event exploration" },
+    ],
     image:
       "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1600&q=80",
     stack: ["React", "EONET API", "Maps", "Data Visualization"],
@@ -321,36 +327,51 @@ export default function HrishikeshPortfolio() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:px-12">
-        <div className="group mb-16 overflow-hidden rounded-[32px] border border-white/10 bg-black/70 transition duration-500 hover:-translate-y-1 hover:border-blue-300/30 hover:shadow-2xl hover:shadow-blue-500/10">
-          <div className="grid lg:grid-cols-2">
-            <div className="relative h-[300px] lg:h-full">
+        <div className="group mb-16 overflow-hidden rounded-[28px] border border-white/10 bg-black/80 shadow-2xl shadow-black/30 transition duration-500 hover:-translate-y-1 hover:border-blue-300/30 hover:shadow-blue-500/10">
+          <div className="grid lg:grid-cols-[0.95fr_1.05fr]">
+            <div className="relative min-h-[320px] lg:min-h-[480px]">
               <img
                 src={featuredProject.image}
                 alt="NASA EONET Interactive Dashboard preview"
-                className="h-full w-full object-cover transition duration-700 group-hover:scale-105 group-hover:brightness-110"
+                className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105 group-hover:brightness-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent" />
-              <div className="absolute bottom-0 left-0 p-6">
-                <p className="text-xs uppercase tracking-[0.3em] text-white/60">
-                  Favorite Project
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-7">
+                <p className="text-xs uppercase tracking-[0.3em] text-blue-200/80">
+                  Featured Case Study
                 </p>
-                <h2 className="mt-2 text-3xl font-semibold transition duration-300 group-hover:text-blue-100 md:text-4xl">
+                <h2 className="mt-3 max-w-xl text-3xl font-semibold leading-tight transition duration-300 group-hover:text-blue-100 md:text-4xl">
                   {featuredProject.title}
                 </h2>
+                <p className="mt-3 text-sm text-white/62">{featuredProject.category}</p>
               </div>
             </div>
 
-            <div className="flex flex-col justify-center p-8">
+            <div className="flex flex-col justify-center p-8 md:p-10">
               <p className="text-xs uppercase tracking-[0.28em] text-blue-300/80">
-                My favorite build so far
+                Project Overview
               </p>
-              <p className="mt-4 leading-7 text-white/78">{featuredProject.description}</p>
-              <p className="mt-4 leading-7 text-white/70">{featuredProject.approach}</p>
-              <p className="mt-4 border-l border-blue-400/40 pl-4 text-sm leading-7 text-white/62">
-                {featuredProject.impact}
+              <p className="mt-4 text-lg leading-8 text-white/82">{featuredProject.description}</p>
+              <p className="mt-4 leading-7 text-white/68">{featuredProject.approach}</p>
+              <p className="mt-5 border-l border-blue-400/40 pl-4 text-sm leading-7 text-white/68">
+                {featuredProject.featuredReason}
               </p>
 
-              <div className="mt-6 flex flex-wrap gap-2">
+              <div className="mt-7 grid gap-3 sm:grid-cols-3">
+                {featuredProject.metrics.map((metric) => (
+                  <div
+                    key={metric.label}
+                    className="border border-white/10 bg-white/[0.03] px-4 py-3"
+                  >
+                    <p className="text-[11px] uppercase tracking-[0.22em] text-white/42">
+                      {metric.label}
+                    </p>
+                    <p className="mt-2 text-sm font-medium text-white/86">{metric.value}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-7 flex flex-wrap gap-2">
                 {featuredProject.highlights.map((highlight) => (
                   <span
                     key={highlight}
@@ -361,7 +382,9 @@ export default function HrishikeshPortfolio() {
                 ))}
               </div>
 
-              <div className="mt-6 flex flex-wrap gap-2">
+              <div className="mt-6">
+                <p className="text-xs uppercase tracking-[0.22em] text-white/42">Tech Stack</p>
+                <div className="mt-3 flex flex-wrap gap-2">
                 {featuredProject.stack.map((tech) => (
                   <span
                     key={tech}
@@ -370,11 +393,12 @@ export default function HrishikeshPortfolio() {
                     {tech}
                   </span>
                 ))}
+                </div>
               </div>
 
               <div className="mt-8 flex flex-wrap gap-4">
                 <PremiumButton
-                  href="https://your-eonet-demo.com"
+                  href="https://nasa-eonet-dashboard.netlify.app/"
                   label="Live Demo"
                   icon={<ExternalLinkIcon />}
                   variant="blue"
