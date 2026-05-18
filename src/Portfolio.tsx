@@ -194,7 +194,7 @@ export default function HrishikeshPortfolio() {
       id: "6",
       title: "Fundraising Analytics Pipelines",
       category: "Internship Impact",
-      period: "Jan 2025 – Present",
+      period: "Mar 2026 – Present",
       duration: "Ongoing",
       description:
         "Automated Python and PostgreSQL data workflows and delivered Power BI dashboards that improved reporting speed and reliability.",
@@ -243,7 +243,7 @@ export default function HrishikeshPortfolio() {
     {
       role: "Data Analytics Intern",
       company: "ChangingThePresent.org / Important Gifts Inc.",
-      period: "Jan 2025 – Present",
+      period: "Mar 2026 – Present",
       bullets: [
         "Built automated Python and PostgreSQL data pipelines for fundraising analytics.",
         "Designed Power BI dashboards for donor engagement KPIs and leadership visibility.",
@@ -253,7 +253,7 @@ export default function HrishikeshPortfolio() {
     {
       role: "Backend Developer Intern",
       company: "Nexus DevOps",
-      period: "May 2024 – Aug 2024",
+      period: "May 2025 – Aug 2025",
       bullets: [
         "Built production REST APIs and backend services in Java, Python, and TypeScript.",
         "Optimized SQL schemas and queries, reducing average API response time by 25%.",
