@@ -198,7 +198,7 @@ export default function HrishikeshPortfolio() {
       duration: "Ongoing",
       description:
         "Automated Python and PostgreSQL data workflows and delivered Power BI dashboards that improved reporting speed and reliability.",
-      highlights: ["~50% faster turnaround", "Data reliability", "Executive dashboards"],
+      highlights: ["Improved reporting turnaround", "Data reliability", "Executive dashboards"],
       image:
         "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
       stack: ["Python", "PostgreSQL", "Power BI", "Analytics"],
@@ -419,7 +419,7 @@ export default function HrishikeshPortfolio() {
             <p className="text-xs uppercase tracking-[0.18em] text-white/45 sm:text-sm sm:tracking-[0.28em]">
               Selected Projects
             </p>
-            <h2 className="mt-3 text-3xl font-semibold sm:text-4xl md:text-5xl">Project timeline</h2>
+            <h2 className="mt-3 text-3xl font-semibold sm:text-4xl md:text-5xl">Selected project work</h2>
             <p className="mt-4 max-w-2xl text-sm leading-7 text-white/60">
               AI/ML, forecasting, and analytics projects appear first, followed by the
               full-stack, backend, and cloud systems that show production engineering depth.
@@ -430,9 +430,9 @@ export default function HrishikeshPortfolio() {
         <div className="mb-8 grid gap-4 sm:grid-cols-2">
           <div className="rounded-lg border border-white/10 bg-black/70 px-5 py-4 transition duration-300 hover:-translate-y-1 hover:border-blue-300/30 hover:shadow-lg hover:shadow-blue-500/10">
             <p className="text-xs uppercase tracking-[0.16em] text-white/45 sm:tracking-[0.24em]">
-              Total project timeline
+              Project span
             </p>
-            <p className="mt-2 text-3xl font-semibold">1+ Years</p>
+            <p className="mt-2 text-3xl font-semibold">2+ Years</p>
           </div>
           <div className="rounded-lg border border-white/10 bg-black/70 px-5 py-4 transition duration-300 hover:-translate-y-1 hover:border-blue-300/30 hover:shadow-lg hover:shadow-blue-500/10">
             <p className="text-xs uppercase tracking-[0.16em] text-white/45 sm:tracking-[0.24em]">
